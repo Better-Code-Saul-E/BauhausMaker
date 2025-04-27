@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "Bauhaus93";
+    src: url("fonts/bauhaus-93/BAUHS93.ttf");
+}
+
+@font-face {
+    font-family: "Bauhaus";
+    src: url("fonts/bauhaus/BauhausRegular.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Bauhaus";;
+    background-color: black;
+}
+
+h1 {
+    font-size: clamp(2rem, 8vw, 5rem);
+    letter-spacing: 0.05em;
+    padding-left: 15px;
+}
+
+.divider {
+    color: black;
+    border: 2px solid black;
+}
+
+#poster-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-top: 10px;
+}
+
+article {
+    height: calc(12vmin * 5);
+    width: calc(12vmin * 4);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 15px;
+    gap: 10px;
+}
+
+section {
+    margin: 3% 0;
+}
+article .shape {
+    aspect-ratio: 1/1;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    margin-top: 30px;
+    background-color: black;
+    padding: 15px 0;
+    border: none;
+    outline: none;
+    color: #F0CF54;
+    font-family: "Bauhaus93";
+    font-size: 1.5em;
+}
+
+.cross {
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+
+.triangle {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.triangle-top-left {
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+}
+
+.triangle-bottom-right {
+    clip-path: polygon(100% 100%, 0 100%, 100% 0);
+}
+
+.circle {
+    clip-path: circle(50% at 50% 50%);
+}
+
+.circle-top-right {
+    clip-path: circle(100.0% at 0 100%);
+}
+
+.circle-bottom-left {
+    clip-path: circle(100.0% at 100% 0);
+}
+
+.square {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.hollow-square {
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+}
+
+.cross {
+    clip-path: polygon(40% 0%, 60% 0%, 60% 40%, 100% 40%, 100% 60%, 60% 60%, 60% 100%, 40% 100%, 40% 60%, 0% 60%, 0% 40%, 40% 40%);
+}
+
+.x {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.right-chevron {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.left-chevron {
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+.diamond {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.triangle-right {
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+}
+
+.l-shape {
+    clip-path: polygon(0% 0%, 50% 0%, 50% 50%, 100% 50%, 100% 100%, 0% 100%);
+}
+
+
+footer {
+    color: #F0CF54;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 -5px 10px white;
+    padding: 20px;
+}
+footer img {
+    width: 30px;
+    height: 30px;
+}
